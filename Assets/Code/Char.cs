@@ -33,12 +33,12 @@ public class Char : MonoBehaviour
 		
 		if (jump && grounded) {
 			this.GetComponent<Animator>().speed = 0;
-			this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300,750f));
+			this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(300,650f));
 			jump = false;
 			grounded= false;
 		}
 		if (down) {
-			this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,-750));
+			this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,-650));
 		}
 	}
 	void OnCollisionEnter2D(){
