@@ -16,6 +16,7 @@ public class Char : MonoBehaviour
         
 		if (Input.GetKeyDown (KeyCode.Space)){
 			jump = true;
+			
 		} else if (Input.GetKeyDown (KeyCode.DownArrow)) {
 			down = true;		
 		}
